@@ -1,0 +1,115 @@
+.market-page {
+    padding-top: 100px;
+    background: var(--bg-soft);
+    min-height: 100vh;
+}
+
+/* Game Selector */
+.game-selector {
+    background: white;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 40px;
+}
+
+.selector-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.custom-select {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-family: inherit;
+    font-weight: 600;
+    color: var(--text-main);
+    background: var(--bg-soft);
+}
+
+/* Category Grid */
+.market-title { margin-bottom: 30px; font-weight: 800; }
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.cat-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: var(--radius-md);
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.cat-card:hover, .cat-card.active {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-subtle);
+}
+
+.cat-card .cat-icon { font-size: 2rem; margin-bottom: 10px; }
+.cat-card h4 { font-weight: 700; font-size: 0.95rem; }
+
+/* Products Section */
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding-bottom: 100px;
+}
+
+.product-card {
+    background: white;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: var(--transition);
+    border: 1px solid #eee;
+}
+
+.product-card:hover { box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+
+.product-img-tag {
+    background: #0f172a;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.product-details { padding: 20px; }
+.product-details h4 { margin-bottom: 8px; font-weight: 700; }
+.product-details p { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px; }
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price { font-size: 1.25rem; font-weight: 800; color: var(--primary); }
+
+.buy-btn {
+    background: var(--text-main);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
