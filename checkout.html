@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Checkout | FALDREX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container nav-bar">
+            <a href="index.html" class="logo"><div class="logo-mark">F</div> FALDREX</a>
+            <div class="checkout-steps">
+                <span class="step active">Cart</span>
+                <span class="step-line"></span>
+                <span class="step">Payment</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="checkout-wrapper">
+        <div class="container checkout-grid">
+            
+            <div class="cart-items-section">
+                <h2 class="section-title">Your Basket (1)</h2>
+                
+                <div class="cart-item-card">
+                    <div class="item-img-mini">OSRS</div>
+                    <div class="item-info">
+                        <h3>Maxed Main Account - 2277 Total</h3>
+                        <p>Direct Delivery | Lifetime Warranty</p>
+                        <div class="item-controls">
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                    <div class="item-price">$450.00</div>
+                </div>
+
+                <div class="promo-box">
+                    <input type="text" placeholder="Promo Code">
+                    <button class="btn-apply">Apply</button>
+                </div>
+            </div>
+
+            <aside class="order-summary">
+                <div class="summary-card">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span>$450.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Transaction Fee</span>
+                        <span>$0.00</span>
+                    </div>
+                    <hr class="divider">
+                    <div class="summary-row total">
+                        <span>Total Payable</span>
+                        <span>$450.00</span>
+                    </div>
+
+                    <button class="btn-primary-full mt-20">Proceed to Payment</button>
+                    
+                    <div class="secure-info">
+                        <p>🔒 256-bit SSL Secure Checkout</p>
+                        <div class="payment-icons">
+                            <span>Visa / MasterCard / Crypto</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+</body>
+</html>
