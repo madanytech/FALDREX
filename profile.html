@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | FALDREX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container nav-bar">
+            <a href="index.html" class="logo"><div class="logo-mark">F</div> FALDREX</a>
+            <div class="user-nav">
+                <span class="user-balance">Balance: $0.00</span>
+                <div class="user-avatar-small">M</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="profile-wrapper">
+        <div class="container profile-grid">
+            
+            <aside class="profile-sidebar">
+                <div class="profile-user-card">
+                    <div class="avatar-large">M</div>
+                    <h3>Madany Tech</h3>
+                    <p>Member since 2026</p>
+                </div>
+                <nav class="profile-nav">
+                    <a href="#" class="nav-item active">📊 Dashboard</a>
+                    <a href="#" class="nav-item">📦 My Orders</a>
+                    <a href="#" class="nav-item">💳 Billing</a>
+                    <a href="#" class="nav-item">⚙️ Settings</a>
+                    <hr>
+                    <a href="#" class="nav-item logout">Logout</a>
+                </nav>
+            </aside>
+
+            <section class="profile-content">
+                <div class="welcome-banner">
+                    <h2>Welcome back, Madany! 👋</h2>
+                    <p>Check your recent orders and manage your gaming assets.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span>Active Orders</span>
+                        <h3>0</h3>
+                    </div>
+                    <div class="stat-card">
+                        <span>Total Spent</span>
+                        <h3>$0.00</h3>
+                    </div>
+                    <div class="stat-card">
+                        <span>Faldrex Points</span>
+                        <h3>150</h3>
+                    </div>
+                </div>
+
+                <div class="recent-orders">
+                    <div class="table-header">
+                        <h3>Recent Orders</h3>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="orders-table-wrapper">
+                        <table class="orders-table">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Product</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="5" class="empty-state">You haven't placed any orders yet.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>
