@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join FALDREX | Level Up Your Gaming</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+
+    <main class="auth-container">
+        <div class="auth-visual">
+            <div class="visual-content">
+                <a href="index.html" class="logo white-logo"><div class="logo-mark">F</div> FALDREX</a>
+                <h1>Unlock the best gaming assets in the market.</h1>
+                <p>Join thousands of players who trust Faldrex for their boosting and account needs.</p>
+            </div>
+            <div class="visual-overlay"></div>
+        </div>
+
+        <div class="auth-form-side">
+            <div class="form-box">
+                <div class="form-header">
+                    <h2 id="auth-title">Welcome Back</h2>
+                    <p id="auth-subtitle">Enter your details to access your account</p>
+                </div>
+
+                <form id="auth-form">
+                    <div class="input-group" id="name-field" style="display: none;">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="John Doe">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="name@example.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+
+                    <button type="submit" class="btn-primary-full">Continue</button>
+                </form>
+
+                <div class="auth-divider">
+                    <span>OR</span>
+                </div>
+
+                <div class="social-auth">
+                    <button class="btn-outline-full"><img src="https://www.svgrepo.com/show/355037/google.svg" width="18"> Google</button>
+                    <button class="btn-outline-full"><img src="https://www.svgrepo.com/show/353655/discord-icon.svg" width="18"> Discord</button>
+                </div>
+
+                <p class="auth-footer">
+                    <span id="toggle-text">Don't have an account?</span> 
+                    <a href="javascript:void(0)" id="toggle-auth">Create Account</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // سكريبت بسيط جداً للتبديل بين تسجيل الدخول والاشتراك
+        const toggleBtn = document.getElementById('toggle-auth');
+        const title = document.getElementById('auth-title');
+        const subtitle = document.getElementById('auth-subtitle');
+        const nameField = document.getElementById('name-field');
+        const toggleText = document.getElementById('toggle-text');
+
+        let isLogin = true;
+
+        toggleBtn.addEventListener('click', () => {
+            isLogin = !isLogin;
+            if (isLogin) {
+                title.innerText = "Welcome Back";
+                subtitle.innerText = "Enter your details to access your account";
+                nameField.style.display = "none";
+                toggleText.innerText = "Don't have an account?";
+                toggleBtn.innerText = "Create Account";
+            } else {
+                title.innerText = "Create Account";
+                subtitle.innerText = "Join Faldrex and start your journey";
+                nameField.style.display = "block";
+                toggleText.innerText = "Already have an account?";
+                toggleBtn.innerText = "Login Instead";
+            }
+        });
+    </script>
+</body>
+</html>
